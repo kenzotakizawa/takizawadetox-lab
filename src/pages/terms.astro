@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Terms of Service">
+  <article class="document-page container">
+    <header class="document-header">
+      <p class="document-label">Legal Document</p>
+      <h1 class="document-title">Terms of Service.</h1>
+      <p class="document-meta">Last updated: <time datetime="2026-03-13">March 13, 2026</time></p>
+    </header>
+
+    <div class="document-content">
+      <p class="lead">
+        These Terms of Service govern your use of the Chrome extensions and tools provided by Takizawa Detox Lab.<br />
+        当ラボが提供するすべてのツールおよび拡張機能の利用に関する規約です。
+      </p>
+      
+      <h2>1. Acceptance of Terms</h2>
+      <p>By installing or using our tools, you agree to be bound by these Terms of Service. 当ラボのツールをインストール、または使用することにより、利用者は本利用規約に同意したものとみなされます。</p>
+
+      <h2>2. License</h2>
+      <p>We grant you a personal, non-exclusive, non-transferable license to use our extensions for your personal or internal business purposes, subject to these Terms. 本規約に従うことを条件に、個人的または社内業務の目的で拡張機能を使用するための、非独占的かつ譲渡不能なライセンスを利用者に付与します。</p>
+
+      <h2>3. Restrictions</h2>
+      <p>You may not: (a) modify, reverse engineer, or decompile the extensions; (b) use the tools for any illegal purpose; or (c) distribute the extensions without our prior written consent. 拡張機能の改変、リバースエンジニアリング、違法な目的での利用、および事前の書面による同意なしでの再配布は禁止されています。</p>
+
+      <h2>4. Disclaimer of Warranties</h2>
+      <p>Our tools are provided "as is" and "as available" without any warranties of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose, or non-infringement. 当ラボのツールは「現状有姿」で提供され、特定の目的への適合性や法的瑕疵の欠如について、明示または黙示を問わずいかなる保証も行いません。</p>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  /* Reuse styles from privacy-policy.astro for consistency */
+  .document-page {
+    padding: var(--spacing-xxl) var(--spacing-md);
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .document-header {
+    margin-bottom: var(--spacing-xl);
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: var(--spacing-lg);
+  }
+
+  .document-label {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .document-title {
+    font-size: clamp(3rem, 6vw, 4rem);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .document-meta {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    letter-spacing: 0.05em;
+  }
+
+  .document-content {
+    font-size: 1.1rem;
+    line-height: 2.2;
+    color: var(--color-text);
+    letter-spacing: 0.03em;
+  }
+
+  .lead {
+    font-size: 1.3rem;
+    line-height: 2;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .document-content h2 {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .document-content p {
+    margin-bottom: var(--spacing-lg);
+    text-align: justify;
+    text-justify: inter-ideograph;
+  }
+</style>

@@ -1,0 +1,96 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Privacy Policy">
+  <article class="document-page container">
+    <header class="document-header">
+      <p class="document-label">Legal Document</p>
+      <h1 class="document-title">Privacy Policy.</h1>
+      <p class="document-meta">Last updated: <time datetime="2026-03-13">March 13, 2026</time></p>
+    </header>
+
+    <div class="document-content">
+      <p class="lead">
+        This Privacy Policy applies to all Chrome extensions and tools provided by Takizawa Detox Lab.<br />
+        当ラボが提供するすべてのツールおよび拡張機能に適用されるプライバシーポリシーです。
+      </p>
+      
+      <h2>1. Information Collection</h2>
+      <p>We believe in minimalism, not just in design, but in data collection. Our extensions generally do not collect personal information unless explicitly stated and required for the core functionality of the specific tool. ミニマリズムの思想はデザインだけでなく、データ収集にも及びます。コア機能に必須の情報を除き、ユーザーの個人情報を無断で収集することはありません。</p>
+
+      <h2>2. Use of Information</h2>
+      <p>Any information collected is used solely to provide and improve the functionality of the extension. We do not sell or share your data with third parties. 収集した情報はツールの品質向上のためにのみ使用され、第三者への販売や共有は一切行いません。</p>
+
+      <h2>3. Third-Party Services</h2>
+      <p>Some extensions may interact with third-party APIs (e.g., Google Drive API) based on your explicit authorization. In such cases, the interaction is governed by the respective third-party privacy policies. ユーザーの明示的な許可に基づき、外部APIと連携する拡張機能が存在する場合があります。その際の通信は、各サービスのプライバシーポリシーに準拠します。</p>
+
+      <h2>4. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. 本ポリシーは随時更新される可能性があります。変更があった場合は、本ページにてお知らせいたします。</p>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .document-page {
+    padding: var(--spacing-xxl) var(--spacing-md);
+    max-width: 720px; /* 雑誌のコラムのような適度な文字幅（Line length）に制限 */
+    margin: 0 auto;
+  }
+
+  .document-header {
+    margin-bottom: var(--spacing-xl);
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: var(--spacing-lg);
+  }
+
+  .document-label {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .document-title {
+    font-size: clamp(3rem, 6vw, 4rem);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .document-meta {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    letter-spacing: 0.05em;
+  }
+
+  .document-content {
+    font-size: 1.1rem;
+    line-height: 2.2; /* 日本語を読みやすくするためのゆったりとした行間 */
+    color: var(--color-text);
+    letter-spacing: 0.03em;
+  }
+
+  .lead {
+    font-size: 1.3rem;
+    line-height: 2;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .document-content h2 {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .document-content p {
+    margin-bottom: var(--spacing-lg);
+    text-align: justify; /* エディトリアル感を出すための両端揃え */
+    text-justify: inter-ideograph;
+  }
+</style>

@@ -1,0 +1,167 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Takizawa Detox Lab - High-end tools for digital minimalists" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>{title} | Takizawa Detox Lab</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="/" class="site-logo">Takizawa Detox Lab.</a>
+        <nav class="site-nav">
+          <a href="/#extensions">Products</a>
+          <a href="/#writings">Writings</a>
+          <a href="/privacy-policy">Privacy</a>
+          <a href="/terms">Terms</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="copyright">&copy; {new Date().getFullYear()} Takizawa Detox Lab.</p>
+        <p class="footer-tagline">Refining the Web Experience.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .site-header {
+    padding: var(--spacing-lg) 0 var(--spacing-md);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .site-logo {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+
+  .site-nav {
+    display: flex;
+    gap: var(--spacing-md);
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text-muted);
+  }
+
+  .site-nav a:hover {
+    color: var(--color-text);
+  }
+
+  .site-main {
+    min-height: calc(100vh - 250px);
+  }
+
+  .site-footer {
+    padding: var(--spacing-xl) 0 var(--spacing-lg);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    font-family: var(--font-sans);
+    letter-spacing: 0.05em;
+  }
+
+  .footer-tagline {
+    font-family: var(--font-serif);
+    font-style: italic;
+  }
+  
+  @media (max-width: 768px) {
+    .header-inner {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--spacing-sm);
+    }
+
+    .site-logo {
+      font-size: 1.2rem;
+    }
+
+    .site-nav {
+      width: 100%;
+      gap: 0;
+      flex-wrap: wrap;
+    }
+
+    .site-nav a {
+      padding: 10px 14px;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.8rem;
+    }
+
+    .footer-inner {
+      flex-direction: column;
+      gap: var(--spacing-sm);
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .site-header {
+      padding: var(--spacing-sm) 0;
+    }
+
+    .site-logo {
+      font-size: 1.05rem;
+      letter-spacing: 0.05em;
+    }
+
+    .site-nav {
+      gap: 0;
+      margin-top: 4px;
+    }
+
+    .site-nav a {
+      padding: 8px 12px;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+    }
+
+    .footer-inner {
+      font-size: 0.75rem;
+    }
+  }
+</style>

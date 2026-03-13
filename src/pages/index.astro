@@ -1,0 +1,890 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home">
+  <div class="hero-wrapper">
+    <!-- Hero Background Image (Darkened) -->
+    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=2000&auto=format&fit=crop');"></div>
+    <div class="hero-overlay"></div>
+    
+    <section class="hero container">
+      <div class="hero-inner">
+        <p class="hero-label">Manifesto</p>
+        <h1 class="hero-title">
+          <span class="title-jp">ノイズを削ぎ落とし、</span><br />
+          <span class="title-en">Refining the Web.</span>
+        </h1>
+        <p class="hero-description">
+          We build minimalist, focused Chrome extensions designed to remove digital noise and enhance focus.<br />
+          日々のウェブ体験から不純物を取り除き、本質的な集中力を取り戻すためのツール群。
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <section id="extensions" class="extensions">
+    <div class="container">
+      <header class="section-header">
+        <div class="section-header-left">
+          <p class="section-label">Chrome Web Store</p>
+          <h2 class="section-title">Latest Tools.</h2>
+        </div>
+        <p class="section-subtitle">拡張機能アーカイブ — 全プロダクト公開中</p>
+      </header>
+      
+      <div class="extensions-list">
+        <!-- Lumoshot -->
+        <a href="https://chromewebstore.google.com/detail/lumoshot-%E3%83%AB%E3%83%A2%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88/omcbegppcmmeamdcighjhpeoogljniha?hl=ja" target="_blank" rel="noopener noreferrer" class="list-item">
+          <div class="item-number">
+            <span class="number">01</span>
+          </div>
+          <div class="item-icon">
+            <img src="https://lh3.googleusercontent.com/qXeWCi3iJN-tha4H3QIQQhOxVRXLevEUrw-GL6zSop7sDfo6cQ4NE1pFzNHMb6epW5ELiH2Z6-tDxAl-FhhXTrdH1w=s128" alt="Lumoshot" class="icon-img" width="48" height="48" />
+          </div>
+          <div class="item-body">
+            <div class="item-top-row">
+              <h3 class="item-title">Lumoshot</h3>
+              <span class="item-tag">Screenshot / Annotation</span>
+            </div>
+            <p class="item-desc">あらゆる画面の「伝えたい箇所」を瞬時にデザインし、視線を誘導する。</p>
+          </div>
+          <div class="item-end">
+            <span class="status-badge status-live"><span class="status-dot"></span>Live</span>
+            <span class="item-arrow">→</span>
+          </div>
+        </a>
+        
+        <!-- PinshotDrive -->
+        <a href="https://chromewebstore.google.com/detail/pinshotdrive/adljeepbpichfiiielfbampmffjapdnn?hl=ja" target="_blank" rel="noopener noreferrer" class="list-item">
+          <div class="item-number">
+            <span class="number">02</span>
+          </div>
+          <div class="item-icon">
+            <img src="https://lh3.googleusercontent.com/6okop5_SPE8IVXyWfRHe11iQLKupJkvWu8gpQK2oYNtoirrPs701H3VtmpQsA257wKOHHnWy9qP1cCTj6beppFIN23M=s128" alt="PinshotDrive" class="icon-img" width="48" height="48" />
+          </div>
+          <div class="item-body">
+            <div class="item-top-row">
+              <h3 class="item-title">PinshotDrive</h3>
+              <span class="item-tag">Capture / Cloud Sync</span>
+            </div>
+            <p class="item-desc">任意の固定領域でスクリーンショット撮影し、Googleドライブに自動保存。</p>
+          </div>
+          <div class="item-end">
+            <span class="status-badge status-live"><span class="status-dot"></span>Live</span>
+            <span class="item-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- Evidence Stamp -->
+        <a href="https://chromewebstore.google.com/detail/evidence-stamp/cdmngeecpflhnidddbchpgifcoedplco?hl=ja" target="_blank" rel="noopener noreferrer" class="list-item">
+          <div class="item-number">
+            <span class="number">03</span>
+          </div>
+          <div class="item-icon">
+            <img src="https://lh3.googleusercontent.com/ejed2v38Mjn0XCtm40cq9jm83RBcfm8O55l5RymLm4Zafb4WjJhvvtnVcB-ZYrKF0xXIoHv__nCluxIstaTrD4Vvmq4=s128" alt="Evidence Stamp" class="icon-img" width="48" height="48" />
+          </div>
+          <div class="item-body">
+            <div class="item-top-row">
+              <h3 class="item-title">Evidence Stamp</h3>
+              <span class="item-tag">Debug / Logging</span>
+            </div>
+            <p class="item-desc">操作ログ付きデバッグスクリーンショットツール。エンジニアが欲しい機能を凝縮。</p>
+          </div>
+          <div class="item-end">
+            <span class="status-badge status-live"><span class="status-dot"></span>Live</span>
+            <span class="item-arrow">→</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Writings / Blog Section -->
+  <section id="writings" class="writings">
+    <div class="container">
+      <header class="section-header">
+        <div class="section-header-left">
+          <p class="section-label">note / Qiita / Zenn</p>
+          <h2 class="section-title">Writings.</h2>
+        </div>
+        <p class="section-subtitle">テックブログ — 開発の裏側</p>
+      </header>
+
+      <div class="writings-grid">
+        <!-- Article 1: note -->
+        <a href="https://note.com/takizawadetox/n/n98d8860d6b81" target="_blank" rel="noopener noreferrer" class="writing-card">
+          <div class="writing-card-inner">
+            <div class="writing-meta">
+              <span class="platform-badge platform-note">note</span>
+              <span class="writing-category">Essay</span>
+            </div>
+            <h3 class="writing-title">個人開発だからこそUXにこだわって欲しいという話</h3>
+            <p class="writing-excerpt">コードはAIも書けるようになった。あなたは「何」をする？ 同じプロンプトなら何で差がつくのか。UXという最大の差別化要因を語る。</p>
+            <span class="writing-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- Article 2: Zenn -->
+        <a href="https://zenn.dev/takizawadetox/articles/86e64cdd08129a" target="_blank" rel="noopener noreferrer" class="writing-card">
+          <div class="writing-card-inner">
+            <div class="writing-meta">
+              <span class="platform-badge platform-zenn">Zenn</span>
+              <span class="writing-category">Architecture</span>
+            </div>
+            <h3 class="writing-title">【Chrome拡張/MV3】Reactを使わずに「リアクティブ」なUIを作る設計パターン</h3>
+            <p class="writing-excerpt">Storage-First Architecture、Heartbeat、Offscreen Document — Manifest V3の制約をVanilla JSで乗り越える3つのパターン。</p>
+            <span class="writing-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- Article 3: Qiita -->
+        <a href="https://qiita.com/kenzotakizawa/items/5fd64fbef79ddf09c3e0" target="_blank" rel="noopener noreferrer" class="writing-card">
+          <div class="writing-card-inner">
+            <div class="writing-meta">
+              <span class="platform-badge platform-qiita">Qiita</span>
+              <span class="writing-category">Implementation</span>
+            </div>
+            <h3 class="writing-title">指定領域の連続スクショをするChrome拡張機能の実装で困ったこと</h3>
+            <p class="writing-excerpt">同期処理によるブロック、Race Condition、ヘッドレスな状態管理 — PinshotDrive開発で直面した4つの技術課題と解法。</p>
+            <span class="writing-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- Article 4: note -->
+        <a href="https://note.com/takizawadetox/n/nd008502afadd" target="_blank" rel="noopener noreferrer" class="writing-card">
+          <div class="writing-card-inner">
+            <div class="writing-meta">
+              <span class="platform-badge platform-note">note</span>
+              <span class="writing-category">Product</span>
+            </div>
+            <h3 class="writing-title">視線誘導を意識したスクリーンショットアプリ「Lumoshot」を作ってみた</h3>
+            <p class="writing-excerpt">スポットライト、フレーム追加、専用スタンプ — 「伝わる」スクリーンショットの設計思想とその機能群。</p>
+            <span class="writing-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- Article 5: note -->
+        <a href="https://note.com/takizawadetox/n/n67a9ac7f3ac4" target="_blank" rel="noopener noreferrer" class="writing-card">
+          <div class="writing-card-inner">
+            <div class="writing-meta">
+              <span class="platform-badge platform-note">note</span>
+              <span class="writing-category">Product</span>
+            </div>
+            <h3 class="writing-title">固定領域を連続でスクリーンショットできるPinshotDrive</h3>
+            <p class="writing-excerpt">「撮った瞬間に次の操作へ」— プレビュー不要の即時保存とGoogleドライブ直結で実現するゼロストレス撮影体験。</p>
+            <span class="writing-arrow">→</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Hero Wrapper for Full Screen Background */
+  .hero-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--color-border);
+    margin-top: 0;
+  }
+
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+    filter: grayscale(100%);
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.9) 100%);
+    z-index: -1;
+  }
+
+  .hero {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: var(--spacing-xxl) 0 var(--spacing-lg);
+  }
+  
+  .hero-inner {
+    max-width: 900px;
+  }
+
+  .hero-label {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-muted);
+    border-left: 1px solid var(--color-text-muted);
+    padding-left: var(--spacing-sm);
+  }
+
+  .hero-title {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .hero-title .title-jp {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .hero-title .title-en {
+    font-family: var(--font-serif);
+    font-size: clamp(3rem, 8vw, 6rem);
+    letter-spacing: -0.02em;
+    font-style: italic;
+    color: var(--color-text-muted);
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    max-width: 650px;
+    line-height: 2.2;
+    letter-spacing: 0.05em;
+  }
+
+  /* ================================
+     Extensions Section — Editorial
+     ================================ */
+  .extensions {
+    padding: var(--spacing-xxl) 0;
+  }
+
+  .section-header {
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .section-header-left {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .section-label {
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .section-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    letter-spacing: 0.02em;
+  }
+
+  .section-subtitle {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    letter-spacing: 0.08em;
+  }
+
+  /* List Container */
+  .extensions-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Each Product Row */
+  .list-item {
+    display: grid;
+    grid-template-columns: 60px 48px 1fr auto;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-xl) 0;
+    border-bottom: 1px solid var(--color-border);
+    align-items: center;
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    position: relative;
+    min-height: 120px;
+  }
+
+  .list-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-text);
+    transition: width 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .list-item:hover::before {
+    width: 100%;
+  }
+
+  .list-item:hover {
+    padding-left: var(--spacing-md);
+  }
+
+  .list-item:hover .number {
+    color: var(--color-text);
+    opacity: 1;
+  }
+
+  .list-item:hover .item-title {
+    letter-spacing: 0.08em;
+  }
+
+  .list-item:hover .item-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .list-item:hover .item-tag {
+    opacity: 1;
+    border-color: rgba(255,255,255,0.2);
+  }
+
+  .list-item:hover .icon-img {
+    transform: scale(1.08);
+    filter: brightness(1.1);
+  }
+
+  /* Number Column */
+  .item-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .number {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: var(--color-text-muted);
+    opacity: 0.5;
+    letter-spacing: 0.1em;
+    transition: all 0.4s ease;
+  }
+
+  /* Icon Column */
+  .item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.4s ease;
+  }
+
+  /* Body Column */
+  .item-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .item-top-row {
+    display: flex;
+    align-items: baseline;
+    gap: var(--spacing-md);
+  }
+
+  .item-title {
+    font-family: var(--font-serif);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin: 0;
+    transition: letter-spacing 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .item-tag {
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-text-muted);
+    border: 1px solid transparent;
+    border-radius: 100px;
+    padding: 4px 14px;
+    opacity: 0;
+    transition: all 0.4s ease;
+    white-space: nowrap;
+  }
+
+  .item-desc {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin: 0;
+    line-height: 1.7;
+    max-width: 600px;
+  }
+
+  /* End Column */
+  .item-end {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+  }
+
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text-muted);
+  }
+
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-text-muted);
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  .status-live .status-dot {
+    background-color: #10b981;
+    box-shadow: 0 0 8px rgba(16, 185, 129, 0.4);
+  }
+
+  .item-arrow {
+    font-family: var(--font-sans);
+    font-size: 1.4rem;
+    color: var(--color-text);
+    opacity: 0;
+    transform: translateX(-12px);
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  /* ================================
+     Writings Section — Editorial Cards
+     ================================ */
+  .writings {
+    padding: var(--spacing-xxl) 0;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .writings-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+
+  .writing-card {
+    display: block;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    position: relative;
+  }
+
+  .writing-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0.1));
+    transition: width 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .writing-card:hover {
+    border-color: rgba(255,255,255,0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.3);
+  }
+
+  .writing-card:hover::after {
+    width: 100%;
+  }
+
+  .writing-card:hover .writing-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .writing-card-inner {
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-height: 220px;
+    position: relative;
+  }
+
+  .writing-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .platform-badge {
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 4px 12px;
+    border-radius: 4px;
+    line-height: 1;
+  }
+
+  .platform-note {
+    background-color: rgba(65, 179, 73, 0.15);
+    color: #41b349;
+  }
+
+  .platform-zenn {
+    background-color: rgba(56, 137, 255, 0.15);
+    color: #3889ff;
+  }
+
+  .platform-qiita {
+    background-color: rgba(85, 196, 26, 0.15);
+    color: #55c41a;
+  }
+
+  .writing-category {
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-text-muted);
+  }
+
+  .writing-title {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .writing-excerpt {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .writing-arrow {
+    position: absolute;
+    bottom: var(--spacing-lg);
+    right: var(--spacing-lg);
+    font-family: var(--font-sans);
+    font-size: 1.3rem;
+    color: var(--color-text);
+    opacity: 0;
+    transform: translateX(-8px);
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  /* Writings first card spans full width for emphasis */
+  .writings-grid .writing-card:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .writings-grid .writing-card:first-child .writing-title {
+    font-size: 1.6rem;
+  }
+
+  .writings-grid .writing-card:first-child .writing-card-inner {
+    min-height: 180px;
+  }
+
+  /* ================================
+     Responsive — 900px (Tablet)
+     ================================ */
+  @media (max-width: 900px) {
+    /* Hero */
+    .hero-wrapper {
+      min-height: 70vh;
+    }
+
+    .hero {
+      padding: var(--spacing-xl) 0 var(--spacing-lg);
+    }
+
+    .hero-title .title-jp {
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    .hero-title .title-en {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+    }
+
+    .hero-description {
+      font-size: 1rem;
+      line-height: 2;
+    }
+
+    /* Section Headers */
+    .section-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--spacing-sm);
+    }
+
+    .section-subtitle {
+      font-size: 0.8rem;
+    }
+
+    /* Latest Tools */
+    .list-item {
+      grid-template-columns: 40px 44px 1fr;
+      gap: var(--spacing-sm);
+      padding: var(--spacing-md) 0;
+      min-height: 90px;
+    }
+
+    .list-item:hover {
+      padding-left: var(--spacing-sm);
+    }
+
+    .item-end {
+      grid-column: 3;
+      justify-content: flex-start;
+      gap: var(--spacing-sm);
+    }
+
+    .item-top-row {
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .item-tag {
+      opacity: 1;
+      border-color: rgba(255,255,255,0.1);
+      align-self: flex-start;
+      font-size: 0.65rem;
+    }
+
+    .item-title {
+      font-size: 1.4rem;
+    }
+
+    .item-desc {
+      font-size: 0.9rem;
+    }
+
+    .item-arrow {
+      display: none;
+    }
+
+    .icon-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+    }
+
+    .number {
+      font-size: 0.8rem;
+    }
+
+    /* Writings */
+    .writings-grid {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-sm);
+    }
+
+    .writings-grid .writing-card:first-child {
+      grid-column: 1;
+    }
+
+    .writings-grid .writing-card:first-child .writing-title {
+      font-size: 1.25rem;
+    }
+
+    .writing-card-inner {
+      min-height: 180px;
+    }
+
+    .writing-title {
+      font-size: 1.15rem;
+    }
+  }
+
+  /* ================================
+     Responsive — 480px (Mobile)
+     ================================ */
+  @media (max-width: 480px) {
+    /* Hero */
+    .hero-wrapper {
+      min-height: 65vh;
+    }
+
+    .hero {
+      padding: var(--spacing-lg) 0 var(--spacing-md);
+    }
+
+    .hero-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .hero-title {
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .hero-title .title-jp {
+      font-size: 1.8rem;
+      letter-spacing: 0.03em;
+    }
+
+    .hero-title .title-en {
+      font-size: 2.2rem;
+    }
+
+    .hero-description {
+      font-size: 0.9rem;
+      line-height: 1.9;
+    }
+
+    /* Section Headers */
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+    }
+
+    /* Latest Tools */
+    .extensions {
+      padding: var(--spacing-lg) 0;
+    }
+
+    .list-item {
+      grid-template-columns: 40px 1fr;
+      gap: 12px;
+      padding: 20px 0;
+      min-height: auto;
+    }
+
+    .item-number {
+      display: none;
+    }
+
+    .icon-img {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+    }
+
+    .item-body {
+      grid-column: 2;
+      gap: 6px;
+    }
+
+    .item-title {
+      font-size: 1.15rem;
+      letter-spacing: 0.02em;
+    }
+
+    .item-desc {
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+
+    .item-end {
+      grid-column: 2;
+      margin-top: 4px;
+    }
+
+    .status-badge {
+      font-size: 0.7rem;
+    }
+
+    .item-tag {
+      font-size: 0.6rem;
+      padding: 3px 10px;
+    }
+
+    /* Writings */
+    .writings {
+      padding: var(--spacing-lg) 0;
+    }
+
+    .writing-card-inner {
+      padding: 20px;
+      min-height: 160px;
+      gap: 10px;
+    }
+
+    .writing-title {
+      font-size: 1.05rem;
+      line-height: 1.5;
+    }
+
+    .writings-grid .writing-card:first-child .writing-title {
+      font-size: 1.1rem;
+    }
+
+    .writings-grid .writing-card:first-child .writing-card-inner {
+      min-height: 140px;
+    }
+
+    .writing-excerpt {
+      font-size: 0.82rem;
+      line-height: 1.6;
+    }
+
+    .platform-badge {
+      font-size: 0.65rem;
+      padding: 3px 10px;
+    }
+
+    .writing-category {
+      font-size: 0.65rem;
+    }
+
+    .writing-arrow {
+      font-size: 1.1rem;
+    }
+  }
+</style>
