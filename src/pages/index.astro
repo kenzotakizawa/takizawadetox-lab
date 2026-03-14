@@ -179,6 +179,20 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container contact-inner">
+      <h2 class="contact-title">Let's work together.</h2>
+      <p class="contact-desc">
+        お仕事のご相談、拡張機能のカスタマイズ、新しいプロダクト開発など、お気軽にご連絡ください。<br>
+        We are ready to build the next minimalist experience.
+      </p>
+      <a href="mailto:support-extention@takizawadetox-lab.com" class="contact-button">
+        Get in Touch
+      </a>
+    </div>
+  </section>
 </Layout>
 
 <style>
@@ -634,6 +648,63 @@ import Layout from '../layouts/Layout.astro';
 
   .writings-grid .writing-card:first-child .writing-card-inner {
     min-height: 180px;
+  }
+
+  /* ================================
+     Contact Section
+     ================================ */
+  .contact {
+    padding: calc(var(--spacing-xxl) * 0.8) 0 var(--spacing-xxl);
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+  }
+
+  .contact-inner {
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+  }
+
+  .contact-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-style: italic;
+    color: var(--color-text);
+  }
+
+  .contact-desc {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: 2;
+  }
+
+  .contact-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 48px;
+    margin-top: var(--spacing-xs);
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border-radius: 100px;
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .contact-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+    opacity: 0.9;
   }
 
   /* ================================
